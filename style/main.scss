@@ -1,0 +1,243 @@
+@import 'root';
+
+.hero{
+    background-image: url("/img/hero.png");
+    background-size: cover;
+    width: 100%;
+    height: 852px;
+    display: flex;
+    justify-content: center;
+
+    .inside-block{
+        width: 80%;
+        padding: 40px 0 203px; 
+    }
+}
+
+header{
+    @include alignment();
+    color: $primary-color;
+    gap: 197px;
+    margin-bottom: 112px;
+
+    .navigation-link{
+        margin-left: 43px;
+        text-decoration: none;
+        display: flex;
+        gap: 52px;
+
+        a{
+            font-family: $font-style-reg;
+            color: $primary-color;
+            text-decoration: none;
+        }
+    }
+
+    .btn{
+        width: 140px;
+        height: 55px;
+        background-color: rgba($primary-color, 0.1);
+        border-color: rgba(237, 255, 129, 0.4);
+        border-radius: 116px;
+        cursor: pointer;
+
+        color: $primary-color;
+        font-family: $font-style-medium;
+    }
+}
+
+.hero-text{
+    @include alignment();
+    flex-direction: column;
+    gap: 70px;
+
+    .hero-main-text{
+        width: 809px;
+        @include alignment();
+        flex-direction: column;
+        gap: 30px;
+        color: $primary-color;
+        text-align: center;
+
+        h1{
+            width: 100%;
+            font-family: $font-style-semibold;
+            font-size: 90px;
+            letter-spacing: 3px;
+        }
+
+        h2{
+            width: 158px;
+            font-family: $font-style-medium;
+            font-size: 2rem;
+            letter-spacing: 2px;
+            color: rgba($primary-color, 0.7);
+        }
+
+        p{
+            font-family: $font-style-reg;
+            width: 80%;
+            height: 80px;
+            font-size: 1.3rem;
+            line-height: 40px;
+            color: rgba($primary-color, 0.5);
+        }
+    }
+
+    .btn-CTA{
+        @include btnStyle();
+    }
+}
+
+.partner{
+    width: 100%;
+    height: 20vh;
+    background-color: #F6FBF9;
+    @include alignment();
+    gap: 125px;
+}
+
+.services{
+    width: 100%;
+    height: 1378px;
+    @include alignment();
+    flex-direction: column;
+    gap: 120px;
+
+    .services-part-1{
+        display: flex;
+        align-items: start;
+        gap: 110px;
+
+        .service-text{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 42px;
+
+            div{
+                display: flex;
+                flex-direction: column;
+                gap: 28px;
+
+                h2{
+                    width: 488px;
+                    font-family: $font-style-bold;
+                    font-size: 42px;
+                    line-height: 65px;
+                    color: $color-h2;
+                }
+
+                p{
+                    width: 424px;
+                    font-family: $font-style-reg;
+                    font-size: 22px;
+                    line-height: 40px;
+                    color: $color-p;
+                }
+            }
+        }
+
+        .btn-link{
+            height: 28px;
+            border: none;
+            background: none;
+            cursor: pointer;
+            @include alignment();
+            gap: 16px;
+            color: $color-btn;
+            text-decoration: underline;
+            letter-spacing: 1px;
+            font-family: $font-style-medium;
+            font-size: 1.5rem;
+        }
+
+        .strategies{
+            width: 572px;
+            height: 558px;
+            display: grid;
+            grid-template-columns: 228px 1fr;
+            grid-template-rows: 239px 239px;
+            gap: 80px 90px;
+
+            article{
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 40px;
+
+                .text-art{
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 25px;
+
+                    h3{
+                        font-family: $font-style-medium;
+                        font-size: 1.5rem;
+                        color: $color-h2;
+                        line-height: 28px;
+                    }
+
+                    p{
+                        font-family: $font-style-reg;
+                        font-size: 1.1rem;
+                        color: $color-p;
+                        line-height: 32px;
+                    }
+                }
+            }
+        }
+    }
+
+    .services-part-2{
+        width: 1244px;
+        @include alignment();
+        gap: 66px;
+        margin-right: 70px;
+
+        .text-social{
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 50px;
+
+            div{
+                width: 488px;
+                height: 240px;
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                gap: 30px;
+
+                h2{
+                    font-family: $font-style-bold;
+                    font-size: 42px;
+                    line-height: 65px;
+                    color: $color-h2;
+                }
+
+                p{
+                    font-family: $font-style-reg;
+                    font-size: 22px;
+                    line-height: 40px;
+                    color: $color-p;
+                }
+            }
+        }
+
+        .btn-CTA{
+            @include btnStyle();
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

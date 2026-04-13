@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik SemiBold';
+    src: url('../fonts/Rubik-SemiBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: semibold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik Medium';
+    src: url('../fonts/Rubik-Medium.ttf') format('truetype');
+    font-weight: medium;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik Bold';
+    src: url('../fonts/Rubik-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+$font-style-semibold: "Rubik Semibold";
+$font-style-reg: "Rubik";
+$font-style-bold: "Rubik Bold";
+$font-style-medium: "Rubik Medium";
+$primary-color: #FFF;
+$color-h2: #253D32;
+$color-p: #78847D;
+$color-btn: #A3B938;
+
+@mixin alignment() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin btnStyle() {
+    background: linear-gradient(329deg, #98AA28 13%, #D6FF7E 121%);
+    box-shadow: 0px 34px 50px rgba(7, 63, 67, 0.1);
+    color: $primary-color;
+    font-family: $font-style-semibold;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border-radius: 192px;
+    border-color: $primary-color;
+    width: 243px;
+    height: 78px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    
+}
+
+body{
+    font-family: $font-style-reg;
+}
