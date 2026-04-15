@@ -271,4 +271,90 @@ header .btn {
   border-color: #FFF;
   width: 243px;
   height: 78px;
+}
+
+.help {
+  width: 100%;
+  height: 664px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  background-color: #F6FBF9;
+}
+.help .help-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.help .help-text h2 {
+  font-family: "Rubik Bold";
+  font-size: 42px;
+  line-height: 65px;
+  color: #253D32;
+}
+.help .help-text p {
+  font-family: "Rubik";
+  font-size: 22px;
+  line-height: 26px;
+  color: #78847D;
+}
+.help .help-plan {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+.help .help-plan .road {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.help .help-plan .road .ellipse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #FFF;
+}
+.help .help-plan .text-road {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+}
+.help .help-plan .text-road span, .help .help-plan .text-road p {
+  width: 237px;
+  text-align: center;
+  font-family: "Rubik";
+  font-size: 22px;
+  line-height: 40px;
+  color: #253D32;
+}
+.help .help-plan .text-road span {
+  font-family: "Rubik Semibold";
+}
+.help .btn-link {
+  height: 28px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: #A3B938;
+  text-decoration: underline;
+  letter-spacing: 1px;
+  font-family: "Rubik Medium";
+  font-size: 1.5rem;
+  margin-top: 10px;
 }/*# sourceMappingURL=main.css.map */
