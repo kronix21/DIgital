@@ -510,6 +510,94 @@ header{
     }
 }
 
+footer{
+    margin-top: 73px;
+    @include alignment();
+    flex-direction: column;
+    gap: 63px;
+
+    .block-footer{
+        width: 80%;
+        height: 232px;
+        @include alignment();
+        gap: 172px;
+
+        .text-footer{
+            width: 354px;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 30px;
+
+            p{
+                font-family: $font-style-reg;
+                font-size: 20px;
+                line-height: 34px;
+                color: $color-p;
+            }
+
+            .social-link-footer{
+                @include alignment();
+                gap: 24px;
+            }
+        }
+
+        .navigation-link{
+            display: flex;
+            align-items: start;
+            gap: 60px;
+
+            .block-link{
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                gap: 28px;
+
+                h2{
+                    font-family: $font-style-bold;
+                    font-size: 24px;
+                    line-height: 34px;
+                    color: $color-h2;
+                }
+
+                nav{
+                    display: flex;
+                    align-items: start;
+                    flex-direction: column;
+                    
+                    a{
+                        text-decoration: none;
+                        font-family: $font-style-reg;
+                        font-size: 16px;
+                        line-height: 34px;
+                        color: $color-p;
+                    }
+                }
+            }
+        }
+    }
+
+    .under-footer{
+        width: 80%;
+        @include alignment();
+        flex-direction: column;
+        padding-bottom: 66px;
+        
+        hr{
+            width: 100%;
+            color: $color-p;
+            margin-bottom: 30px;
+        }
+
+        p{
+            font-family: $font-style-reg;
+            font-size: 16px;
+            line-height: 34px;
+            color: $color-p;
+        }
+    }
+}
+
 
 
 
