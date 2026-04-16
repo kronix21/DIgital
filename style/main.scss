@@ -314,6 +314,202 @@ header{
     }
 }
 
+.blog{
+    @include alignment();
+    flex-direction: column;
+    gap: 60px;
+
+    .title-blog{
+        display: flex;
+        align-items: flex-end;
+        gap: 216px;
+        padding-top: 120px;;
+
+        h2{
+            width: 488px;
+            font-family: $font-style-bold;
+            font-size: 42px;
+            line-height: 65px;
+            color: $color-h2;
+        }
+
+        .themes-blog{
+            display: flex;
+            align-items: start;
+            gap: 70px;
+
+            span{
+                @include alignment();
+                flex-direction: column;
+                gap: 9px;
+                color: $color-h2 !important;
+            }
+
+            span, p{
+                font-family: $font-style-reg;
+                font-size: 24px;
+                line-height: 28px;
+                color: #808371;
+            }
+        }
+    }
+
+    .articles{
+        display: flex;
+        align-items: start;
+        gap: 40px;
+        padding-bottom: 60px;
+
+        .main-art{
+            width: 540px;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 25px;
+
+            .description-main{
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                gap: 15px;
+
+                p{
+                    font-family: $font-style-reg;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #808371;
+                }
+
+                h3{
+                    font-family: $font-style-medium;
+                    font-size: 26px;
+                    line-height: 36px;
+                    color: $color-h2;
+                }
+            }
+
+            .btn-read{
+                width: 206px;
+                height: 68px;
+                border-radius: 192px;
+                border: 1px solid $color-btn;
+                background: none;
+                margin-top: 15px;;
+
+                font-family: $font-style-semibold;
+                font-size: 20px;
+                line-height: 24px;
+                color: #98AA28;
+            }
+        }
+
+        .article{
+            width: 270px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 25px;
+
+            .description{
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                gap: 12px;
+
+                span{
+                    font-family: $font-style-reg;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #808371;
+                }
+
+                h3{
+                    font-family: $font-style-medium;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: $color-h2;
+                }
+
+                p{
+                    font-family: $font-style-reg;
+                    font-size: 18px;
+                    line-height: 30px;
+                    color: $color-p;
+                }
+            }
+
+            .btn-show{
+                @include alignment();
+                width: 68px;
+                height: 68px;
+                border-radius: 50%;
+                border: 1px solid $color-btn;
+                background: none;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+.form-sub{
+    width: 100%;
+    @include alignment();
+    
+    .block-form{
+        width: 1277px;
+        height: 550px;
+        margin-left: 116px;
+        background-image: url('../img/background-footer.png');
+
+        .title-form{
+            width: 790px;
+            padding: 101px 0 0 132px;
+            margin-bottom: 62px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 30px;
+
+            h2{
+                width: 640px;
+                font-family: $font-style-semibold;
+                font-size: 32px;
+                line-height: 55px;
+                color: $primary-color;
+            }
+        }
+
+        .completion-form{
+            padding: 0 0 0 132px;
+            display: flex;
+            align-items: start;
+            gap: 30px;
+
+            input{
+                width: 372px;
+                height: 78px;
+                border-radius: 192px;
+                border: none;
+                padding-left: 40px; 
+
+                &::placeholder{
+                    font-family: $font-style-medium;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #14183E;
+                }
+            }
+
+            .btn-CTA{
+                @include btnStyle();
+            }
+
+            
+        }
+    }
+}
+
 
 
 
